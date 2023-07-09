@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Minha Lista TBR (To be Read)!</h1>
+
+    <div>
+      <table id="book-table">
+        <thead>
+          <tr>
+            <th>Lido</th>
+            <th>Título</th>
+            <th>Autor(a)</th>
+            <th>Gênero</th>
+            <th>Ano de Lançamento</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td>Verity</td>
+            <td>Colleen Hoover</td>
+            <td>Romance</td>
+            <td>2018</td>
+          </tr>
+
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td>O Senhor dos Anéis</td>
+            <td>J. R. R. Tolkien</td>
+            <td>Fantasia</td>
+            <td>1954</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mb-5 mt-5">
+      <hr />
+    </div>
+
+    <h2>Cadastrar novo livro</h2>
+
+    <div>
+      <form id="book-form">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="author">Autor(a):</label>
+        <input type="text" id="author" name="author" required />
+
+        <label for="genre">Gênero:</label>
+        <input type="text" id="genre" name="genre" required />
+
+        <label for="year">Ano de Lançamento:</label>
+        <input type="text" id="year" name="year" required />
+
+        <input type="submit" value="Cadastrar" />
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
